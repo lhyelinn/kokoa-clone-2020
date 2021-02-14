@@ -189,3 +189,7 @@
 .reply:focus-within {
   transform: translateY(80px);
 }
+#chats-screen,
+.main-chat {
+  padding-bottom: 50px;
+}
