@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px;
+  padding: 15px var(--horizontal-space);
   position: fixed;
-  top: 25px;
+  top: var(--horizontal-space);
   background-color: white;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .screen-header__title {
@@ -15,9 +16,22 @@
 }
 .screen-header__icons {
   position: fixed;
-  right: 25px;
+  right: var(--horizontal-space);
 }
 
 .screen-header__icons span {
   margin-left: 20px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 2s linear infinite;
 }
