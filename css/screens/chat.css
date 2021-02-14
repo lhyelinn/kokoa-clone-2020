@@ -3,6 +3,7 @@
 }
 #chat-screen {
   background-color: #aac1cf;
+  margin-bottom: 50px;
 }
 
 #chat-screen .alt-header {
@@ -45,7 +46,7 @@
 }
 
 .main-chat {
-  margin-top: 100px;
+  margin: 100px 0px;
   padding: 0px var(--horizontal-space);
   display: flex;
   flex-direction: column;
@@ -188,8 +189,4 @@
 
 .reply:focus-within {
   transform: translateY(80px);
-}
-#chats-screen,
-.main-chat {
-  margin-bottom: 50px;
 }
